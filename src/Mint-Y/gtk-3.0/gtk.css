@@ -15,8 +15,8 @@
   -gtk-outline-radius: 2px; }
 
 .background {
-  color: #404040;
-  background-color: rgba(240, 240, 240, 0.999); }
+  color: #303030;
+  background-color: rgba(239, 239, 239, 0.999); }
 
 *:disabled {
   -gtk-icon-effect: dim; }
