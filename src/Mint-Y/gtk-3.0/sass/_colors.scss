@@ -113,6 +113,7 @@ $wm_bg_unfocused: $header_bg;
 // $wm_highlight: $header_highlight;
 $wm_highlight: if($variant == 'light' and $darker =='false', darken($header_bg, 10%), #141414);
 $wm_border: $header_border;
+$wm_border_unfocused: lighten($header_border, 5%);
 
 // terminal colours
 $terminal_bg: if($variant == 'light', #fdf6e3, #380c0c);
