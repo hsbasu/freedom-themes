@@ -325,6 +325,8 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     }
   }
 
+  .frame { border-width: 1px 0 1px 0; }
+
   .caja-side-pane {
 
     .view,
@@ -350,6 +352,13 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
       background-color: $selected_bg_color;
       background-color: $selected_bg_color;
       color: $selected_fg_color;
+
+    .frame { border-width: 1px 0 0 0; }
+
+    .view > box,
+    viewport.frame {
+      border: 1px solid $borders_color;
+      border-width: 1px 0 0 0;
     }
   }
 }
