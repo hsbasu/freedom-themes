@@ -3131,7 +3131,9 @@ headerbar,
   button.titlebutton {
     @extend .image-button;
 
-    padding: 6px 1px;
+    padding: 10px 3px;
+    margin: 0;
+    transition: none;
 
     @include button(undecorated);
     background-color: transparentize($header_bg, 1);

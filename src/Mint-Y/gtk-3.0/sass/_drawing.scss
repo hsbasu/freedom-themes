@@ -296,6 +296,23 @@
 }
 
 //
+// Titlebar circular buttons
+//
+@mixin draw_circle($c, $bc) {
+
+  background-image: -gtk-gradient(radial,
+                                  center center, 0,
+                                  center center, 0.45,
+                                  to($c),
+                                  to(transparent)),
+                    -gtk-gradient(radial,
+                                  center center, 0,
+                                  center center, 0.5,
+                                  to($bc),
+                                  to(transparent));
+}
+
+//
 // Overshoot
 //
 @mixin overshoot($p, $c:$selected_bg_color) {
