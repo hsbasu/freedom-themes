@@ -3,15 +3,16 @@
 
 // We need to set this first because we use it to tint many
 // of the remaining colors
-$selected_bg_color: if($variant == 'light', #92b372, #8fa876);
+$tint_color: if($variant == 'light', #92b372, #8fa876);
 
-$base_color: if($variant == 'light', mix($selected_bg_color, #ffffff, 2%), mix($selected_bg_color, #404040, 2%));
+$base_color: if($variant == 'light', mix($tint_color, #ffffff, 2%), mix($tint_color, #404040, 2%));
 $text_color: if($variant == 'light', #303030, #dadada);
-$bg_color: if($variant == 'light', mix($selected_bg_color, #f0f0f0, 2%), mix($selected_bg_color, #383838, 2%));
+$bg_color: if($variant == 'light', mix($tint_color, #f0f0f0, 2%), mix($tint_color, #383838, 2%));
 $fg_color: if($variant =='light' or $darker =='true', transparentize(#404040, 0.13), transparentize(#d9d9d9, 0.13));
 
+$selected_bg_color: if($variant == 'light', #92b372, #8fa876);
 $selected_fg_color: #ffffff;
-$selected_borders_color: darken($selected_bg_color, 20%);
+$selected_borders_color: darken($selected_bg_color, 15%);
 // $borders_color: if($variant =='light', #bdbdbd, darken($bg_color,6%));
 $borders_color: if($variant =='light', darken($bg_color, 18%), darken($bg_color,6%));
 $separator_color: if($variant == 'light', #dfdfdf, darken($bg_color, 6%));
@@ -55,7 +56,7 @@ $header_highlight: if($variant == 'light', #EEEEEE, #373737);
 
 $header_fg: $fg_color;
 
-$dark_sidebar_bg: if($variant == 'light', saturate(darken($bg_color, 1%), 5%), mix($selected_bg_color, #353535, 3%));
+$dark_sidebar_bg: if($variant == 'light', saturate(darken($bg_color, 1%), 5%), mix($tint_color, #353535, 3%));
 $dark_sidebar_fg: $fg_color;
 $dark_sidebar_border: $borders_color;
 
@@ -94,6 +95,8 @@ $header_entry_border: if($darker == 'true' or $variant == 'dark', transparentize
 
 $button_bg: if($variant == 'light', lighten($bg_color, 2%), lighten($base_color, 2%));
 $button_border: $borders_color;
+$button_active_bg: transparentize(black, 0.85);
+$button_active_border: darken($button_border, 10%);
 
 $header_button_bg: if($darker == 'true' or $variant == 'dark', transparentize(lighten($header_bg, 22%), 0.6), transparentize($button_bg, 0.1));
 $header_button_border: if($darker == 'true' or $variant == 'dark', transparentize(darken($header_bg, 12%), 0.6), transparentize($header_fg, 0.7));
