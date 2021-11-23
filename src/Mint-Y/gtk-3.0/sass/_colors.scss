@@ -34,7 +34,7 @@ $insensitive_bg_color: if($variant == 'light', mix($bg_color, $base_color, 40%),
 
 $dim_label_fg_color: transparentize($fg_color, 0.35);
 
-$header_bg: if($variant=='light' and $darker=='false', #cccccc, #3d3d3d);
+$header_bg: if($variant=='light' and $darker=='false', #cccccc, #292929);
 $header_bg_backdrop: if($darker == 'true' or $variant == 'dark', lighten($header_bg, 1.5%), lighten($header_bg, 3%));
 $header_border: if($variant == 'light' and $darker == 'false', #d0d0d0, #2f2f2f);
 $header_highlight: if($variant == 'light' and $darker == 'false', #eeeeee, #373737);
@@ -98,3 +98,7 @@ $wm_bg_unfocused: $header_bg;
 // $wm_highlight: $header_highlight;
 $wm_highlight: if($variant == 'light' and $darker =='false', darken($header_bg, 10%), #141414);
 $wm_border: $header_border;
+
+// terminal colours
+$terminal_bg: if($variant == 'light', #fdf6e3, #380c0c);
+$terminal_fg: if($variant == 'light', #2e3436, #d3d3d3);

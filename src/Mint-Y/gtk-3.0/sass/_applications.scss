@@ -68,8 +68,8 @@ SushiFontWidget {
 //
 vte-terminal.terminal-screen {
   -TerminalScreen-background-darkness: 1.0;
-  background-color: #3f3f3f;
-  color: #fff;
+  background-color: $terminal_bg;
+  color: $terminal_fg
 }
 
 terminal-screen-container,
@@ -104,8 +104,8 @@ TerminalWindow {
 //
 vte-terminal {
   -TerminalScreen-background-darkness: 0.97;
-  background-color: #3f3f3f;
-  color: #fff;
+  background-color: $terminal_bg;
+  color: $terminal_fg;
 }
 
 //
