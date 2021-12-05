@@ -1,14 +1,15 @@
-Source: mint-themes
+Source: mamolinux-themes
 Section: gnome
 Priority: optional
 Maintainer: Himadri Sekhar Basu <hsb10@iitbbs.ac.in>
-Build-Depends: debhelper (>= 9), sassc
+Build-Depends: debhelper (>= 10), sassc
 Standards-Version: 3.9.5
 
-Package: mint-themes
-Replaces: mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
-Conflicts: mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
+Package: mamolinux-themes
+Replaces: mint-themes, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
+Conflicts: mint-themes, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
 Depends: ${misc:Depends}, mint-y-icons, freedom-y-cursors
 Architecture: all
-Description: Mint themes
- A collection of mint themes.
+Description: MamoLinux themes
+ A collection of GTK, Metacity, Cinnamon themes
+ for MamoLinux
