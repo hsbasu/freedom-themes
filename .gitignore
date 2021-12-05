@@ -3,5 +3,9 @@ src/Mint-Y/cinnamon/sass-cache
 
 # SASS cache files
 *.scssc
+# generated css files
+src/Mint-Y/gtk-3.0/gtk.css
+src/Mint-Y/gtk-3.0/gtk-dark.css
+src/Mint-Y/gtk-3.0/gtk-darker.css
 
 usr __pycache__
