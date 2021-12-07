@@ -11,13 +11,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="4.4979167mm"
-   height="4.4979167mm"
-   viewBox="0 0 4.4979167 4.4979167"
+   width="6.3499999mm"
+   height="6.3499999mm"
+   viewBox="0 0 6.3499999 6.3499999"
    version="1.1"
    id="svg889"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="button-bg-max-hover.svg">
+   sodipodi:docname="unmaximize_unfocused_prelight.svg">
   <defs
      id="defs883">
     <linearGradient
@@ -98,16 +98,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.2004743"
-     inkscape:cx="7.0873973"
-     inkscape:cy="5.1229065"
+     inkscape:zoom="4"
+     inkscape:cx="-19.582716"
+     inkscape:cy="15.25388"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1903"
-     inkscape:window-height="1016"
-     inkscape:window-x="1"
-     inkscape:window-y="28"
+     inkscape:window-width="1904"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata886">
@@ -125,10 +125,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-8.0130967,-162.78066)">
+     transform="translate(2.8260738,-194.44156)">
     <g
        id="g2620"
-       transform="matrix(0.13281251,0,0,0.13281251,4.966479,170.23455)"
+       transform="matrix(0.18750001,0,0,0.18750001,-7.1271811,204.9647)"
        style="opacity:0.75">
       <circle
          style="opacity:1;fill:#225500;fill-opacity:1;stroke:none;stroke-width:0.25275722"
@@ -157,6 +157,27 @@
          cy="-48.844173"
          rx="5.2916665"
          ry="4.8915915" />
+    </g>
+    <g
+       transform="matrix(0.26470588,0,0,0.26470588,-9.5451752,164.89023)"
+       id="layer1-6"
+       inkscape:label="Layer 1">
+      <g
+         transform="matrix(0.25,0,0,0.25,21.683288,99.074583)"
+         id="g5123">
+        <path
+           style="opacity:0.8;fill:#000000;stroke:none;stroke-width:0.17587781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 62.777717,64.3661 v 29.10417 c 0,3.14584 1.683565,4.7625 4.7625,4.7625 h 29.104167 z"
+           id="path1414"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="path1416"
+           d="m 62.777717,132.09944 v -29.10417 c 0,-3.145845 -1.683565,-4.7625 -4.7625,-4.7625 H 28.91105 Z"
+           style="opacity:0.8;fill:#000000;stroke:none;stroke-width:0.17587781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
     </g>
   </g>
 </svg>

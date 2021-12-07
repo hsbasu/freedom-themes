@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="4.4979167mm"
-   height="4.4979167mm"
-   viewBox="0 0 4.4979167 4.4979167"
+   width="6.3499999mm"
+   height="6.3499999mm"
+   viewBox="0 0 6.3499999 6.3499999"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="button-bg-unfocused.svg">
+   sodipodi:docname="minimize_unfocused.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -129,15 +129,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.597222"
-     inkscape:cx="17.38672"
-     inkscape:cy="8.5472996"
+     inkscape:cx="-24.470166"
+     inkscape:cy="30.929948"
      inkscape:document-units="mm"
      inkscape:current-layer="titlebutton-close-backdrop"
      showgrid="false"
-     inkscape:window-width="1903"
-     inkscape:window-height="1016"
-     inkscape:window-x="1"
-     inkscape:window-y="28"
+     inkscape:window-width="1904"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -160,13 +160,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-42.458707,264.87966)">
+     transform="translate(-52.050408,260.80966)">
     <g
        id="titlebutton-close-backdrop"
        inkscape:label="#g2034"
        transform="translate(-2.6254012,9.4483868)">
       <g
-         transform="matrix(0.13281251,0,0,0.13281251,41.694019,-266.87416)"
+         transform="matrix(0.18750001,0,0,0.18750001,49.889801,-259.73491)"
          inkscape:label="#g841"
          id="inactive">
         <circle
@@ -197,6 +197,31 @@
            rx="5.2916665"
            ry="4.8915915"
            transform="matrix(1.8407606,0,0,1.1662429,-30.937149,8.9817939)" />
+      </g>
+      <g
+         transform="matrix(1.4117647,0,0,1.4117647,-33.568054,-340.74223)"
+         id="layer1-6"
+         inkscape:label="Layer 1">
+        <g
+           id="g7138"
+           style="display:inline;opacity:0.8;fill:#808080;fill-opacity:1"
+           transform="matrix(0.48506944,0,0,0.33072917,-602.70052,-32.160692)">
+          <g
+             transform="translate(-58)"
+             style="display:inline;opacity:1;fill:#808080;fill-opacity:1"
+             id="g4490-3-75">
+            <g
+               id="g4092-0-7-0"
+               style="display:inline;fill:#808080;fill-opacity:1"
+               transform="translate(58)" />
+          </g>
+          <path
+             inkscape:connector-curvature="0"
+             d="m 1373,254 v 2 h 6 v -2 z"
+             id="rect9057-4-3"
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:Sans;-inkscape-font-specification:Sans;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+             sodipodi:nodetypes="ccccc" />
+        </g>
       </g>
     </g>
   </g>

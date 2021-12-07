@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="4.4979167mm"
-   height="4.4979167mm"
-   viewBox="0 0 4.4979167 4.4979167"
+   width="6.3499999mm"
+   height="6.3499999mm"
+   viewBox="0 0 6.3499999 6.3499999"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="button-bg.svg">
+   sodipodi:docname="maximize_unfocused.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -128,22 +128,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="13.093751"
-     inkscape:cx="-27.845367"
-     inkscape:cy="6.0103685"
+     inkscape:zoom="11.597222"
+     inkscape:cx="-24.366569"
+     inkscape:cy="23.146598"
      inkscape:document-units="mm"
      inkscape:current-layer="titlebutton-close-backdrop"
      showgrid="false"
-     inkscape:window-width="1903"
-     inkscape:window-height="1016"
-     inkscape:window-x="1"
-     inkscape:window-y="28"
+     inkscape:window-width="1904"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     units="mm" />
+     units="mm"
+     showguides="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -160,13 +161,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-42.458707,264.87966)">
+     transform="translate(-52.022998,260.691)">
     <g
        id="titlebutton-close-backdrop"
        inkscape:label="#g2034"
        transform="translate(-2.6254012,9.4483868)">
       <g
-         transform="matrix(0.13281251,0,0,0.13281251,41.694019,-266.87416)"
+         transform="matrix(0.18750001,0,0,0.18750001,49.862391,-259.61625)"
          inkscape:label="#g841"
          id="inactive">
         <circle
@@ -197,6 +198,31 @@
            rx="5.2916665"
            ry="4.8915915"
            transform="matrix(1.8407606,0,0,1.1662429,-30.937149,8.9817939)" />
+      </g>
+      <g
+         transform="matrix(1.5686274,0,0,1.5686274,-41.602332,-453.63661)"
+         id="layer1-6"
+         inkscape:label="Layer 1">
+        <g
+           id="g7146"
+           style="display:inline;opacity:0.8;fill:#808080;fill-opacity:1"
+           transform="matrix(0.39641912,0,0,0.3964178,-493.58359,17.915632)">
+          <g
+             transform="translate(-29)"
+             style="display:inline;opacity:1;fill:#808080;fill-opacity:1"
+             id="g4490-2-96">
+            <g
+               id="g4092-0-6-83"
+               style="display:inline;fill:#808080;fill-opacity:1"
+               transform="translate(58)" />
+          </g>
+          <path
+             id="path4293-5-95"
+             style="display:inline;opacity:1;fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
+             d="m 1403.7995,252 h 3.3818 c 0.4503,0 0.8162,0.36847 0.8187,0.8188 v 3.3817 z m 2.4074,6.00692 h -3.395 c -0.4504,0 -0.8188,-0.36842 -0.8188,-0.81875 v -3.39509 l 4.2138,4.21384"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="csscccsscc" />
+        </g>
       </g>
     </g>
   </g>
