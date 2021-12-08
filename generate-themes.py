@@ -28,16 +28,16 @@ os.system("mkdir -p usr/share/themes")
 
 curdir = os.getcwd()
 
-# Build Mint-Y Base themes (light, dark, darker)
+# Build Sucharu Base themes (light, dark, darker)
 os.chdir("src/Mint-Y")
 os.system("./build-themes.py")
 
 os.chdir(curdir)
 
-# Mint-Y color variations
+# Sucharu color variations
 for color in y_hex_colors1.keys():
     for variant in ["", "-Dark", "-Darker"]:
-        original_name = "Mint-Y%s" % variant
+        original_name = "Sucharu%s" % variant
         path = os.path.join("src/Mint-Y/variations/%s" % color)
         if os.path.isdir(path):
             print("Derivating %s-%s" % (original_name, color))
@@ -109,8 +109,8 @@ for color in y_hex_colors1.keys():
                     for accent in Y_HEX_ACCENT4:
                         os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors4[color], 'file': file})
             
-            # # Remove metacity-theme-3.xml (it doesn't need to be derived since it's using GTK colors, and Cinnamon doesn't want to list it)
-            # os.system("rm -f %s" % os.path.join(theme, "metacity-1", "metacity-theme-3.xml"))
+            # Remove metacity-theme-3.xml (it doesn't need to be derived since it's using GTK colors, and Cinnamon doesn't want to list it)
+            os.system("rm -rf %s" % os.path.join(theme, "metacity-1"))
             
             directories = []
             directories.append(os.path.join(theme, "cinnamon/common-assets"))

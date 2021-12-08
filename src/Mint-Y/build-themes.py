@@ -2,9 +2,9 @@
 
 import os
 
-VARIATIONS = ["Mint-Y",
-              "Mint-Y-Darker",
-              "Mint-Y-Dark"]
+VARIATIONS = ["Sucharu",
+              "Sucharu-Darker",
+              "Sucharu-Dark"]
 
 DEST = '../../usr/share/themes'
 
@@ -53,8 +53,8 @@ if __name__ == '__main__':
     for variation in VARIATIONS:
         dest_folder = os.path.join(DEST, variation)
         os.system("mkdir -p %s" % dest_folder)
-        if variation == "Mint-Y":
-            print("    Building Mint-Y")
+        if variation == "Sucharu":
+            print("    Building Sucharu")
             os.system("cp index.theme %s/" % dest_folder)
             # Gtk2
             version_folder = os.path.join(dest_folder, "gtk-2.0")
@@ -71,24 +71,28 @@ if __name__ == '__main__':
             # Metacity
             os.system("cp -R metacity-1 %s" % dest_folder)
             os.system("rm %s/*-dark*" % (os.path.join(dest_folder, "metacity-1")))
+            os.chdir((os.path.join(dest_folder, "metacity-1")))
+            os.system("ln -sf %s %s" % ("metacity-theme-1.xml", "metacity-theme-2.xml"))
+            os.system("ln -sf %s %s" % ("metacity-theme-1.xml", "metacity-theme-3.xml"))
+            os.chdir(curdir)
             # Cinnamon
             version_folder = os.path.join(dest_folder, "cinnamon")
             os.system("mkdir -p %s" % version_folder)
             os.system("cp -R cinnamon/common-assets %s" % version_folder)
             os.system("cp -R cinnamon/light-assets %s" % version_folder)
-            os.system("cp cinnamon/mint-y-thumbnail.png %s" % os.path.join(version_folder, "thumbnail.png"))
+            os.system("cp cinnamon/sucharu-thumbnail.png %s" % os.path.join(version_folder, "thumbnail.png"))
             os.system("cp cinnamon/cinnamon.css %s" % version_folder)
             # XFWM
             os.system("cp -R xfwm4 %s" % dest_folder)
             
-        elif variation == "Mint-Y-Darker":
-            print("    Building Mint-Y-Darker")
+        elif variation == "Sucharu-Darker":
+            print("    Building Sucharu-Darker")
             os.system("cp index.theme-darker %s" % os.path.join(dest_folder, "index.theme"))
             # Gtk2
             version_folder = os.path.join(dest_folder, "gtk-2.0")
             os.system("mkdir -p %s" % version_folder)
             os.system("cp -R gtk-2.0/assets %s" % version_folder)
-            os.system("cp -R gtk-2.0/menubar-toolbar %s" % version_folder)
+            # os.system("cp -R gtk-2.0/menubar-toolbar %s" % version_folder)
             os.system("cp gtk-2.0/*.rc %s" % version_folder)
             os.system("cp gtk-2.0/gtkrc-darker %s" % os.path.join(version_folder, "gtkrc"))
             # Gtk3
@@ -104,8 +108,8 @@ if __name__ == '__main__':
             os.system("cp -R xfwm4/*.png %s" % version_folder)
             os.system("cp -R xfwm4/themerc %s" % version_folder)
 
-        elif variation == "Mint-Y-Dark":
-            print("    Building Mint-Y-Dark")
+        elif variation == "Sucharu-Dark":
+            print("    Building Sucharu-Dark")
             os.system("cp index.theme-dark %s" % os.path.join(dest_folder, "index.theme"))
             # Gtk2
             version_folder = os.path.join(dest_folder, "gtk-2.0")
@@ -124,14 +128,18 @@ if __name__ == '__main__':
             os.system("cp gtk-3.0/thumbnail-dark.png %s" % os.path.join(version_folder, "thumbnail.png"))
             # Metacity
             os.system("cp -R metacity-1 %s" % dest_folder)
-            os.system("mv %s %s" % (os.path.join(dest_folder, "metacity-1", "metacity-theme-3-dark.xml"), os.path.join(dest_folder, "metacity-1", "metacity-theme-3.xml")))
+            os.system("mv %s %s" % (os.path.join(dest_folder, "metacity-1", "metacity-theme-1-dark.xml"), os.path.join(dest_folder, "metacity-1", "metacity-theme-1.xml")))
+            os.chdir((os.path.join(dest_folder, "metacity-1")))
+            os.system("ln -sf %s %s" % ("metacity-theme-1.xml", "metacity-theme-2.xml"))
+            os.system("ln -sf %s %s" % ("metacity-theme-1.xml", "metacity-theme-3.xml"))
+            os.chdir(curdir)
             os.system("mv %s %s" % (os.path.join(dest_folder, "metacity-1", "thumbnail-dark.png"), os.path.join(dest_folder, "metacity-1", "thumbnail.png")))
             # Cinnamon
             version_folder = os.path.join(dest_folder, "cinnamon")
             os.system("mkdir -p %s" % version_folder)
             os.system("cp -R cinnamon/common-assets %s" % version_folder)
             os.system("cp -R cinnamon/dark-assets %s" % version_folder)
-            os.system("cp cinnamon/mint-y-dark-thumbnail.png %s" % os.path.join(version_folder, "thumbnail.png"))
+            os.system("cp cinnamon/sucharu-dark-thumbnail.png %s" % os.path.join(version_folder, "thumbnail.png"))
             os.system("cp cinnamon/cinnamon-dark.css %s" % os.path.join(version_folder, "cinnamon.css"))
             # XFWM
             version_folder = os.path.join(dest_folder, "xfwm4")
