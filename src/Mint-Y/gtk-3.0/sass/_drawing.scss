@@ -152,7 +152,7 @@
   //
   // pushed button
   //
-    color: $fg_color;
+    color: $selected_fg_color;
     outline-color: transparentize($fg_color, 0.7);
 
     border-color: $button_active_border;
@@ -174,7 +174,7 @@
   //
   // insensitive pushed button
   //
-    color: transparentize($fg_color, 0.2);
+    color: transparentize($selected_fg_color, 0.2);
     border-color: transparentize($button_active_border, 0.15);
     background-color: transparentize($button_active_bg, 0.05);
 
@@ -208,7 +208,7 @@
   //
   // pushed header-bar button
   //
-    color: $header_fg;
+    color: $selected_fg_color;
     outline-color: transparentize($header_fg, 0.7);
     border-color: if($darker=='false' and $variant=='light', $header_button_border, transparent);
     background-color: $button_active_bg;
@@ -229,7 +229,7 @@
   //
   // header-bar insensitive pushed button
   //
-    color: transparentize($fg_color, 0.2);
+    color: transparentize($selected_fg_color, 0.2);
     border-color: transparentize($button_active_border, 0.15);
     background-color: transparentize($button_active_bg, 0.05);
   }

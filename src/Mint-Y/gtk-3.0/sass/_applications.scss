@@ -263,7 +263,7 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
   }
 
   .places-treeview {
-    -NemoPlacesTreeView-disk-full-bg-color: if($variant == 'light', #aaaaaa, $dark_sidebar_fg);
+    -NemoPlacesTreeView-disk-full-bg-color: if($variant == 'light', #ffff00, $dark_sidebar_fg);
     -NemoPlacesTreeView-disk-full-fg-color: darken($selected_bg_color, 10%);
     -GtkTreeView-vertical-separator: 7;
 
@@ -332,22 +332,6 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
       background-color: $dark_sidebar_bg;
       color: $dark_sidebar_fg;
     }
-    
-    notebook {
-      treeview {
-        &.view:selected, &.view:selected:hover {
-          background-color: $selected_bg_color;
-          color: $selected_fg_color;
-        }
-      }
-    }
-  }
-  
-  .caja-notebook treeview {
-    &.view:selected, &.view:selected:hover {
-      background-color: $selected_bg_color;
-      background-color: $selected_bg_color;
-      color: $selected_fg_color;
 
     .frame { border-width: 1px 0 0 0; }
 
@@ -355,6 +339,21 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     viewport.frame {
       border: 1px solid $borders_color;
       border-width: 1px 0 0 0;
+    }
+  }
+  
+  .caja-notebook treeview {
+    &.view:selected, &.view:selected:hover {
+      background-color: $selected_bg_color;
+      color: $selected_fg_color;
+
+      .frame { border-width: 1px 0 0 0; }
+
+      .view > box,
+      viewport.frame {
+        border: 1px solid $borders_color;
+        border-width: 1px 0 0 0;
+      }
     }
   }
 }

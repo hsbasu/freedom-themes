@@ -681,7 +681,7 @@ modelbutton.flat {
 
   &:hover { background-color: $menu_selected_bg_color; }
   &:active, &:selected { &, arrow { background-color: $menu_selected_bg_color; } }
-  &:checked { color: $fg_color; }
+  &:checked { color: $menu_selected_fg_color; }
 
   // FIXME: temporary workaround
   check:last-child,
@@ -1558,7 +1558,7 @@ menubar,
 
     &:hover { //Seems like it :hover even with keyboard focus
       background-color: $menu_selected_bg_color;
-      color: $fg_color;
+      color: $menu_selected_fg_color;
     }
     &:disabled {
       color: transparentize($header_fg, 0.6);
@@ -1601,7 +1601,7 @@ menu,
     padding: 5px;
 
     &:hover {
-      color: $fg_color;
+      color: $menu_selected_fg_color;
       background-color: $menu_selected_bg_color;
     }
     &:disabled {
