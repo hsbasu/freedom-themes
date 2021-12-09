@@ -45,40 +45,7 @@ $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 $panel_bg: $bg_color;
 $panel_fg: $fg_color;
 
-$panel_bg_panel: $panel_bg;
-@if $variantcol =='light' {
-    $panel_bg_panel: #006600;
-}
-@else if $variantcol =='aqua' {
-    $panel_bg_panel: #087778;
-}
-@else if $variantcol =='blue' {
-    $panel_bg_panel: #09618d;
-}
-@else if $variantcol =='brown' {
-    $panel_bg_panel: #55381d;
-}
-@else if $variantcol =='grey' {
-    $panel_bg_panel: #4f4f4f;
-}
-@else if $variantcol =='orange' {
-    $panel_bg_panel: #9f430b;
-}
-@else if $variantcol =='pink' {
-    $panel_bg_panel: #993155;
-}
-@else if $variantcol =='purple' {
-    $panel_bg_panel: #781178;
-}
-@else if $variantcol =='red' {
-    $panel_bg_panel: #951616;
-}
-@else if $variantcol =='sand' {
-    $panel_bg_panel: #615334;
-}
-@else if $variantcol =='teal' {
-    $panel_bg_panel: #005555;
-}
+$panel_bg_panel: if($variant == 'light', #afca95, #779559);
 
 $entry_bg: if($variant=='light', $base_color, lighten($base_color, 0%));
 $entry_border: if($variant == 'light', #cfd6e6, darken($borders_color, 0%));
