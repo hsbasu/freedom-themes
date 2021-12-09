@@ -2,7 +2,7 @@ all: clean buildthemes
 
 buildthemes:
 	@echo "Building the themes"
-	./generate-themes.py
+	./generate-themes.py All
 
 clean: SHELL:=/bin/bash
 clean:

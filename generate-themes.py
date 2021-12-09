@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import os
+import os, sys
 
 from constants import Y_HEX_ACCENT1, Y_HEX_ACCENT2, Y_HEX_ACCENT3, Y_HEX_ACCENT4
 from constants import y_hex_colors1, y_hex_colors2, y_hex_colors3, y_hex_colors4
@@ -10,6 +10,11 @@ def change_value (key, value, file):
     else:
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
+    
+def usage ():
+    print ("Usage: generate-themes.py [color]")
+    print ("color can be 'Aqua', 'Blue', 'Brown', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Sand', 'Teal' or 'All'.")
+    sys.exit(1)
 
 def y_colorize_directory (path, variation):
     for accent in Y_HEX_ACCENT1:
@@ -21,21 +26,19 @@ def y_colorize_directory (path, variation):
     for accent in Y_HEX_ACCENT4:
         os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_hex_colors4[variation]))
 
-if os.path.exists("usr"):
-    os.system("rm -rf usr/")
+def generate_theme(color):
+    if os.path.exists("usr"):
+        os.system("rm -rf usr/")
 
-os.system("mkdir -p usr/share/themes")
+    os.system("mkdir -p usr/share/themes")
 
-curdir = os.getcwd()
+    # Build Sucharu Base themes (light, dark, darker)
+    os.chdir("src/Mint-Y")
+    os.system("./build-themes.py")
 
-# Build Sucharu Base themes (light, dark, darker)
-os.chdir("src/Mint-Y")
-os.system("./build-themes.py")
-
-os.chdir(curdir)
-
-# Sucharu color variations
-for color in y_hex_colors1.keys():
+    os.chdir(curdir)
+    # build Sucharu color variations
+    # for color in y_hex_colors1.keys():
     for variant in ["", "-Dark", "-Darker"]:
         original_name = "Sucharu%s" % variant
         path = os.path.join("src/Mint-Y/variations/%s" % color)
@@ -82,7 +85,6 @@ for color in y_hex_colors1.keys():
             if (variant != "-Darker"):
                 # Darker variants have no cinnamon style
                 os.system("cp -R src/Mint-Y/cinnamon/sass %s/cinnamon/" % theme)
-                os.system("cp -R %s/cinnamon/sass %s/cinnamon/" % (path, theme))
                 y_colorize_directory("%s/cinnamon/sass" % theme, color)
                 os.chdir("%s/cinnamon" % theme)
                 if (variant == "-Dark"):
@@ -133,3 +135,18 @@ for color in y_hex_colors1.keys():
             
             os.system("cp -R files/%s ./usr/share/themes" % theme)
 
+
+if len(sys.argv) < 2:
+    usage()
+else:
+    color_variation = sys.argv[1]
+    if not color_variation in ["Aqua", "Blue", "Brown", "Grey", "Orange", "Pink", "Purple", "Red", "Sand", "Teal", "All"]:
+        usage()
+        
+curdir = os.getcwd()
+
+if color_variation == "All":
+    for color in y_hex_colors1.keys():
+        generate_theme(color)
+else:
+    generate_theme(color_variation)
