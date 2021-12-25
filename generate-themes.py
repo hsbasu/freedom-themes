@@ -135,8 +135,8 @@ else:
 
 curdir = os.getcwd()
 
-if os.path.exists("usr"):
-        os.system("rm -rf usr/")
+# if os.path.exists("usr"):
+#         os.system("rm -rf usr/")
 
 os.system("mkdir -p usr/share/themes")
 

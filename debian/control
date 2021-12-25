@@ -11,6 +11,13 @@ Replaces: mint-themes, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-
 Conflicts: mint-themes, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
 Depends: ${misc:Depends}, mint-y-icons, mamolinux-cursors
 Architecture: all
-Description: MamoLinux themes
+Description: MamoLinux Desktop themes
  A collection of GTK, Metacity, Cinnamon themes
+ for MamoLinux
+
+Package: mamolinux-themes-plank
+Depends: ${misc:Depends}, plank
+Architecture: all
+Description: Plank themes for MamoLinux
+ A collection of Plank themes
  for MamoLinux

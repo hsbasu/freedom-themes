@@ -9,3 +9,9 @@ src/Mint-Y/cinnamon/sass-cache
 # directories
 usr/*
 __pycache__/*
+debian/mamolinux-themes
+debian/mamolinux-plank-themes
+debian/.debhelper*
+
+# dpkg-buildpackage geenerated
+*.substvars
