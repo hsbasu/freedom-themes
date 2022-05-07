@@ -1,23 +1,25 @@
 Source: mamolinux-themes
 Section: gnome
 Priority: optional
-Homepage: https://github.com/hsbasu/mamolinux-themes
 Maintainer: Himadri Sekhar Basu <hsb10@iitbbs.ac.in>
 Build-Depends: debhelper (>= 12), sassc, inkscape, gtk2-engines-pixbuf, gtk2-engines-murrine, gnome-themes-standard, python3
 Standards-Version: 4.5.0
+Homepage: https://github.com/hsbasu/mamolinux-themes
 
 Package: mamolinux-themes
+Architecture: any
+Multi-Arch: foreign
 Replaces: mint-themes, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
 Conflicts: mint-themes, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
-Depends: ${misc:Depends}, mamolinux-icons, mamolinux-cursors
-Architecture: all
+Depends: ${misc:Depends}, mamolinux-icons, mamolinux-themes-cursors
 Description: MamoLinux Desktop themes
  A collection of GTK, Metacity, Cinnamon themes
  for MamoLinux
 
 Package: mamolinux-themes-plank
+Architecture: any
+Multi-Arch: foreign
 Depends: ${misc:Depends}, plank
-Architecture: all
 Description: Plank themes for MamoLinux
  A collection of Plank themes
  for MamoLinux
