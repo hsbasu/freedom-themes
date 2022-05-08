@@ -11,7 +11,7 @@ Architecture: any
 Multi-Arch: foreign
 Replaces: mint-themes, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
 Conflicts: mint-themes, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
-Depends: ${misc:Depends}, mamolinux-icons, mamolinux-themes-cursors
+Depends: ${misc:Depends}, mamolinux-icons, mamolinux-themes-cursor
 Description: MamoLinux Desktop themes
  A collection of GTK, Metacity, Cinnamon themes
  for MamoLinux
