@@ -48,6 +48,10 @@ titlebutton-min
 titlebutton-min-backdrop
 titlebutton-min-hover
 titlebutton-min-active
+titlebutton-resize
+titlebutton-resize-backdrop
+titlebutton-resize-hover
+titlebutton-resize-active
 checkbox-checked-dark
 checkbox-checked-insensitive-dark
 checkbox-unchecked-dark
@@ -84,3 +88,7 @@ titlebutton-min-dark
 titlebutton-min-backdrop-dark
 titlebutton-min-hover-dark
 titlebutton-min-active-dark
+titlebutton-resize-dark
+titlebutton-resize-backdrop-dark
+titlebutton-resize-hover-dark
+titlebutton-resize-active-dark
