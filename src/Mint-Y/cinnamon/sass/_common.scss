@@ -728,8 +728,8 @@ StScrollBar {
 // Calendar
 //
 .calendar {
-    spacing-rows: 0;
-    spacing-columns: 0;
+  spacing-rows: 0;
+  spacing-columns: 0;
 }
 
 .calendar-main-box {
@@ -746,6 +746,7 @@ StScrollBar {
 }
 
 .calendar-events-no-events-box {
+  color: inherit;
 }
 
 .calendar-events-no-events-button {
@@ -1423,16 +1424,19 @@ StScrollBar {
   }
 
   &-places {
-
     &-box {
       padding: 10px;
       border: 0px solid red;
     }
 
-    &-button { padding: 10px; }
+    &-button {
+      padding: 10px;
+    }
   }
 
-  &-categories-box { padding: 10px 30px 10px 30px; }
+  &-categories-box {
+    padding: 10px 30px 10px 30px;
+  }
 
   &-applications-inner-box,
   &-applications-outer-box { padding: 10px 10px 0 10px; }

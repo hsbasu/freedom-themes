@@ -5,20 +5,40 @@
 // to _colors.scss
 
 // hover Sucharu: we want the hover bg to be a visible gray for dark and light shell themes
-$hover_bg_color: transparentize($selected_bg_color, 0.9);
+$hover_bg_color: transparentize($selected_bg_color, 0.5);
 $hover_fg_color: $fg_color;
 $hover_borders_color: lighten($borders_color,if($variant=='light', 5%, 3%));
 
 // active Sucharu: we want the active bg to be a visible gray for dark and light shell themes
-$active_bg_color: transparentize($selected_bg_color, 0.8);
+$active_bg_color: transparentize($selected_bg_color, 0.1);
 $active_fg_color: darken($fg_color,if($variant=='light', 5%, 3%));
 $active_borders_color: darken($borders_color,if($variant=='light', 5%, 3%));
 
 //
 // Calendar
 //
+.calendar {
+  padding: .4em 1.75em;
+}
+
+.calendar-main-box {
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.calendar-events-main-box {
+  border-radius: 10px;
+}
+
 .calendar-day-base {
   border-radius: 999px;
+}
+
+.calendar-event-button {
+  border-radius: 5px;
+  &:hover {
+    border-radius: 0 25px 25px 0;
+  }
 }
 
 // arrow back
@@ -43,4 +63,71 @@ $active_borders_color: darken($borders_color,if($variant=='light', 5%, 3%));
 	  background-color: $active_bg_color;
 	  border-radius: 10px;
 	}
+}
+
+//
+// buttons and entries
+//
+%entry, %button {
+  &, &:focus, &:hover, &:hover:focus, &:active, &:active:focus, &:insensitive {
+    border-radius: 50px;
+  }
+}
+
+:focus, :hover, :hover:focus, :active, :active:focus, :insensitive {
+  border-radius: 50px;
+}
+
+
+//
+// Popvers/Menus
+//
+.menu {
+  margin: 10px;
+  border-radius: 20px;
+  &.top {
+    margin: 10px;
+    border-radius: 10px 10px 25px 25px;
+  }
+
+  &.bottom {
+    margin: 10px;
+    border-radius: 25px 25px 10px 10px;
+  }
+
+  &.left {
+    margin: 10px;
+    border-radius: 10px 25px 25px 10px;
+  }
+
+  &.right {
+    margin: 10px;
+    border-radius: 25px 10px 10px 25px;
+  }
+  
+  &-favorites-box {
+    border-radius: 25px;
+  }
+  
+  &-favorites-button {
+    border-radius: 20px;
+  }
+  
+  &-category-button {
+    border-radius: 25px;
+    &-selected {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border-radius: 5px 25px 25px 5px;
+    }
+  }
+
+  &-application-button {
+    border-radius: 25px;
+    &-selected {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 25px;
+    }
+  }
 }
