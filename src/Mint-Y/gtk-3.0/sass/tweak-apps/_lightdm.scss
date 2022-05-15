@@ -1,0 +1,61 @@
+// the panel widget at the top
+#panel_window {
+  menubar,
+  menubar > menuitem {
+    background-color: $panel_bg_panel;
+  }
+}
+
+window.background.lightdm {
+  
+  button {
+    &.flat.option-button {
+      // color of DE selector button
+      background-color: if($variant=="light", darken($panel_bg_panel, 20%), darken($panel_bg_panel, 5%));
+      
+      &:active {
+        background-color: if($variant=="light", darken($panel_bg_panel, 20%), darken($panel_bg_panel, 5%));
+      }
+
+      &:hover, &:active:hover {
+        background-color: transparentize(if($variant=="light", darken($panel_bg_panel, 20%), darken($panel_bg_panel, 5%)), 0.3);
+      }
+    }
+    
+    &, &.toggle-button {
+      // button color for nopassword-login and DEs
+      @if $variant=="light" {
+        color: $selected_fg_color;
+        background-color: darken($panel_bg_panel, 20%);
+      }
+      @else {
+        color: $selected_fg_color;
+        background-color: $panel_bg_panel;
+      }
+      
+      &:active {
+        @if $variant=="light" {
+          background-color: darken($panel_bg_panel, 20%);
+        }
+        @else {
+          background-color: $panel_bg_panel;
+        }
+      }
+      
+      &.selected {
+        background-color: if($variant=="light", darken($panel_bg_panel, 10%), darken($panel_bg_panel, 5%));
+        border: 2px dashed $panel_bg_panel;
+      }
+      
+      &:hover, &:active:hover {
+        color: $selected_fg_color;
+        background-color: transparentize(if($variant=="light", darken($panel_bg_panel, 20%), darken($panel_bg_panel, 5%)), 0.3);
+      }
+    }
+    
+    &.toggle-button {
+      // button radius for DE chooser combo
+      border-radius: 20px;
+    }
+  }
+}

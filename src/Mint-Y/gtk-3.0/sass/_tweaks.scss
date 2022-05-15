@@ -1,0 +1,16 @@
+// Sucharu: any modifications to Mint's original cinnamon theme
+// may be added in this file. We will use this file override
+// any settings that are contradictory to project goals of sucharu
+// except for the colours. Any modifications in colors should be added
+// to _colors.scss
+
+// @import 'tweak-apps/gnome-3.22';
+// @import 'tweak-apps/misc';
+// @import 'tweak-apps/mate';
+// @import 'tweak-apps/budgie';
+// @import 'tweak-apps/xfce';
+// @import 'tweak-apps/nemo';
+// @import 'tweak-apps/elementary';
+@import 'tweak-apps/lightdm';
+@import 'tweak-apps/granite';
+@import 'tweak-apps/unity';

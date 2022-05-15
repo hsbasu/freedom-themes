@@ -16,9 +16,13 @@
   menubar menuitem:disabled {
     color: transparentize($panel_fg, 0.5);
 
-    label { color: inherit; }
+    label {
+      color: inherit;
+    }
   }
-  menubar menu > menuitem { font-weight: normal; }
+  menubar menu > menuitem {
+    font-weight: normal;
+  }
 }
 
 // the login window
@@ -74,7 +78,9 @@
   color: $fg_color;
   font-size: 13px;
 
-  menu { font-weight: normal; }
+  menu {
+    font-weight: normal;
+  }
 }
 
 // the user's avatar box
