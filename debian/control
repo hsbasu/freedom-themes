@@ -2,9 +2,31 @@ Source: mamolinux-themes
 Section: gnome
 Priority: optional
 Maintainer: Himadri Sekhar Basu <hsb10@iitbbs.ac.in>
-Build-Depends: debhelper (>= 12), sassc, inkscape, gtk2-engines-pixbuf, gtk2-engines-murrine, gnome-themes-standard, python3
-Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 12),
+               dh-migrations,
+Build-Depends-Indep: libglib2.0-dev,
+                     meson (>= 0.50),
+                     sassc,
+                     inkscape,
+                     gtk2-engines-pixbuf,
+                     gtk2-engines-murrine,
+                     gnome-themes-standard,
+                     python3
+Standards-Version: 4.6.0
 Homepage: https://github.com/hsbasu/mamolinux-themes
+
+Package: sucharu-theme-gnome-shell
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Breaks: gnome-shell (<< 42~)
+Description: Sucharu GNOME Shell desktop theme
+ This is the GNOME Shell theme for MamoLinux
+ .
+ This package contains the GNOME Shell theme part
+ .
+ If you want to follow development, more information here:
+ https://github.com/hsbasu/mamolinux-themes/gnome-shell.
 
 Package: mamolinux-themes
 Architecture: any

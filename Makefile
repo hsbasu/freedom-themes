@@ -1,10 +1,11 @@
 SHELL:=/bin/bash
 
-all: clean buildthemes buildplankthemes
+all: buildthemes buildplankthemes
 
 buildthemes:
 	@echo "Building desktop themes"
 	python3 generate-themes.py All
+	@wait
 	
 buildplankthemes:
 	@echo "Building plank themes"

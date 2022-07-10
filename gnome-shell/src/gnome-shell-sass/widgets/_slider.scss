@@ -1,0 +1,25 @@
+/* Slider */
+
+$slider_size: 16px;
+
+.slider {
+  // slider trough
+  -barlevel-height: 4px;
+  -barlevel-background-color: if($variant == 'light', transparentize($fg_color, 0.6), transparentize($fg_color, 0.8)); //background of the trough
+  -barlevel-border-width: 2px; 
+  -barlevel-border-color: transparent; // trough border color
+  // fill style
+  -barlevel-active-background-color: $progress_bg_color; //active trough fill // Yaru change: we detached progress from selected
+  -barlevel-active-border-color: transparent;
+  // overfill style (red in this case)
+  -barlevel-overdrive-color: $destructive_color;
+  -barlevel-overdrive-border-color: transparent; //trough border when red;
+  -barlevel-overdrive-separator-width:1px;
+  // slider handler
+  -slider-handle-border-width: if($variant=='light', 1px, 0); // Yaru change: add border on light theme
+  -slider-handle-border-color: if($variant=='light', darken($alt_borders_color, 3%), transparent); // because 0 width - Yaru change: the handle border needs to be darker for the light theme
+  -slider-handle-radius: $slider_size * 0.5; // half the size of the size
+
+  color: darken(white, 1%); // Yaru change: adapt knob to gtk
+  height: if($variant == 'light', $slider_size + 2px, $slider_size); // Yaru change: increase height in light theme due to border
+}
